@@ -1,12 +1,14 @@
-alert("Oi do externo");
+var nasc = parseInt(prompt("digite seu ano de nascimento: "));
+let nome = prompt("digite seu nome: ");
+const viva = true;
+let altura = parseFloat(prompt("digite sua altura em metros: "))
+let idade;
 
-var num = parseFloat(prompt("digite um valor: "))
-if (num == 0){
-    alert(`${num} é zero`);
-}else if (num %2 != 0){
-    alert(`${num} é impar`);
-}else{
-    alert(`${num} é par`);
+if (viva){
+idade = 2026 - nasc;
+    alert(`${nome} você tem ${idade} anos.`);
+}else {
+    alert(` você está morta.`);
 }
 
-alert("Fim");
+alert("Fim"); 
